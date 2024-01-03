@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+}
+main {
+  padding: 25% 30px;
+}
+.hero_img_container {
+  width: 100%;
+}
+.hero_img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.order_description_container {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: -5px;
+  border-radius: 0 0 20px 20px;
+}
+.order_title {
+  margin: 20px 0;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.order_description {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+.price_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+}
+.price_title {
+  font-weight: 900;
+  font-size: 15px;
+}
+.price_description {
+  font-size: 14px;
+}
+.change {
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+}
+.change:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+.button {
+  padding: 16px;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: 2px 10px 15px 3px hsl(224, 86%, 91%);
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.7;
+}
+.cancel_order {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  padding: 10px;
+}
+.cancel_order:hover {
+  color: #000;
+}
+.cancelOrder {
+  margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 30% 20%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position: bottom 900px left 20px; */
+  }
+  main {
+    padding: 5% 30%;
+  }
+  .order_description_container {
+    padding: 50px;
+  }
+  .order_title {
+    font-size: 30px;
+  }
+  .order_description {
+    font-size: 20px;
+  }
+  .price_title {
+    font-size: 20px;
+  }
+  .price_description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position: bottom 900px left 20px; */
+  }
+  main {
+    padding: 14% 32%;
+  }
+  .order_description_container {
+    padding: 50px;
+  }
+  .order_title {
+    font-size: 50px;
+  }
+  .order_description {
+    font-size: 24px;
+  }
+  .price_title {
+    font-size: 24px;
+  }
+  .price_description {
+    font-size: 20px;
+  }
+}

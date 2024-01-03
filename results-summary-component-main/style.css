@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk";
+  max-width: 100%;
+}
+.results {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+  display: grid;
+  place-content: center;
+  padding: 5%;
+  border-radius: 0 0 30px 30px;
+  color: lightgray;
+  margin-bottom: 20px;
+}
+.score {
+  margin: 20px auto;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 140px;
+  border-radius: 100%;
+  color: #fff;
+  padding: 5%;
+}
+.main-score {
+  margin-top: 7px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.score p {
+  margin: 7px 0 0 0;
+  color: lightgray;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+.message {
+  color: #fff;
+  width: 70%;
+  margin: 0 auto;
+}
+.message p {
+  color: lightgray;
+}
+.reaction,
+.memory,
+.verbal,
+.visual {
+  padding: 5%;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+.individual-score {
+  position: absolute;
+  right: 40px;
+  font-weight: bold;
+  color: black;
+}
+.over-100 {
+  color: grey;
+}
+.fa-bolt,
+.fa-comment,
+.fa-brain,
+.fa-eye {
+  margin-right: 10px;
+}
+h3 {
+  padding: 3% 5%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.button {
+  margin-left: 20px;
+  padding: 15px;
+  width: 90%;
+  border: 1px;
+  border-radius: 30px;
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    padding: 20%;
+  }
+  .results {
+    border-radius: 30px;
+    margin-bottom: 0;
+  }
+  .row {
+    border-radius: 30px;
+    margin: 30px auto;
+    width: 80%;
+  }
+  .row:hover {
+    box-shadow: 1px 10px 10px hsl(221, 100%, 96%);
+  }
+  .individual-score {
+    position: relative;
+    left: 70px;
+  }
+  .button {
+    padding: 5px;
+    border: 1px;
+  }
+  .button:hover {
+    border: 1px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+  .reaction,
+  .memory,
+  .verbal,
+  .visual {
+    padding: 10px;
+    margin-left: 15px;
+  }
+  .message {
+    font-size: 0.8rem;
+  }
+  .results p {
+    font-weight: bold;
+  }
+}

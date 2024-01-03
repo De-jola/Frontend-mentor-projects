@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 7em 1.5em 3em;
+  box-sizing: border-box;
+  background-color: hsl(212, 45%, 89%);
+}
+main {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 1em;
+}
+.hero-description-container {
+  text-align: center;
+  padding: 0.5em;
+}
+.hero-title {
+  margin-bottom: 1em;
+}
+.hero-img-container {
+  margin-bottom: 1em;
+}
+.hero-img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+@media (min-width: 1024px) {
+  body {
+    padding: 12% 36% 12% 36%;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    padding: 20rem 35rem 20rem 35rem;
+  }
+}

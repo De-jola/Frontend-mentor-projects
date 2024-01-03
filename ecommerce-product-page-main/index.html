@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>sneakers</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="left-nav">
+        <div class="logo-div">
+          <div onclick="displayMenu()" class="menu-container">
+            <img class="menu" src="images/icon-menu.svg" alt="" />
+          </div>
+          <div class="logo-container">
+            <img class="logo" src="images/logo.svg" alt="" />
+          </div>
+        </div>
+        <ul id="menu">
+          <li onclick="hideMenu()" class="menu-close">
+            <img src="images/icon-close.svg" alt="" />
+          </li>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="right-nav">
+        <div onclick="displayCard()" class="icon-container">
+          <img src="images/icon-cart.svg" alt="" />
+          <span class="display" id="cartNumber">3</span>
+        </div>
+        <div class="profile-container">
+          <img class="profile" src="images/image-avatar.png" alt="" />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="hero-container">
+        <div class="hero-img">
+          <img
+            class="heroImg"
+            id="product1"
+            src="images/image-product-1.jpg"
+            alt=""
+          />
+
+          <div class="carousel-container">
+            <div class="carousel-slide" id="slide1">
+              <img id="product1" src="images/image-product-1.jpg" alt="" />
+            </div>
+            <div class="carousel-slide" id="slide2">
+              <img id="product1" src="images/image-product-2.jpg" alt="" />
+            </div>
+            <div class="carousel-slide" id="slide3">
+              <img id="product1" src="images/image-product-3.jpg" alt="" />
+            </div>
+            <div class="carousel-slide" id="slide4">
+              <img id="product1" src="images/image-product-4.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="arrow-div">
+            <div onclick="showNextSlide()" class="arrow-next-div">
+              <img class="next" id="next" src="images/icon-next.svg" alt="" />
+            </div>
+            <div class="arrow-prev-div">
+              <img
+                onclick="showPrevSlide()"
+                class="prev"
+                id="prev"
+                src="images/icon-previous.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="thumbnail-div">
+            <div class="thumbnail1">
+              <img
+                onclick="changeJpg(1)"
+                id="thumbnail1"
+                class="thumbnail-img"
+                src="images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <div class="thumbnail1">
+              <img
+                onclick="changeJpg(2)"
+                id="thumbnail2"
+                class="thumbnail-img"
+                src="images/image-product-2-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <div class="thumbnail1">
+              <img
+                onclick="changeJpg(3)"
+                id="thumbnail3"
+                class="thumbnail-img"
+                src="images/image-product-3-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <div class="thumbnail1">
+              <img
+                onclick="changeJpg(4)"
+                id="thumbnail4"
+                class="thumbnail-img"
+                src="images/image-product-4-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="hero-description">
+          <h5 class="logo-title">SNEAKER COMPANY</h5>
+          <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+          <p class="product-description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer
+          </p>
+          <div class="price-compare-div">
+            <div class="price-div">
+              <h5 class="product-price bold">$125.00</h5>
+              <div class="discount bold">50%</div>
+            </div>
+            <p class="old-price bold">$250.00</p>
+          </div>
+
+          <div class="add-to-cart">
+            <div class="number-of-pieces">
+              <p>
+                <img
+                  onclick="minus()"
+                  class="minus hover"
+                  id="minus"
+                  src="images/icon-minus.svg"
+                  alt=""
+                />
+              </p>
+              <p id="number">0</p>
+              <p>
+                <img
+                  onclick="plus()"
+                  class="plus hover"
+                  id="plus"
+                  src="images/icon-plus.svg"
+                  alt=""
+                />
+              </p>
+            </div>
+            <button onclick="addToCart()" id="addToCart" class="button">
+              <img class="btn-cart" src="images/btn-cart.svg" alt="" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="cartCard" class="cart-card display">
+        <h5 class="cart-title bold">Cart</h5>
+        <hr />
+        <div id="cartSummary" class="main">
+          <div class="cart-summary">
+            <div class="cart-img">
+              <img
+                id="cartImg"
+                src="images/image-product-1-thumbnail.jpg"
+                alt=""
+              />
+            </div>
+            <p>
+              Fall Limited Edition Sneakers $125.00 x
+              <span id="pieces">3</span> $
+              <span class="bold" id="total">375.00</span>
+            </p>
+            <div onclick="displayCartSummary();" class="trash">
+              <img id="delete" src="images/icon-delete.svg" alt="" />
+            </div>
+          </div>
+          <button class="button button-cart">Checkout</button>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

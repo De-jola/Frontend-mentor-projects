@@ -1,0 +1,369 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: hsl(243, 87%, 12%);
+}
+header {
+  padding: 1.5em;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  gap: 1em;
+}
+img {
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+.logo {
+  width: 100%;
+}
+.navbrand {
+  width: 30%;
+}
+.hero-section {
+  padding: 2em;
+  text-align: center;
+  background-image: url(images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding-bottom: 7em;
+}
+.hero-img-container {
+  padding: 1.5em;
+}
+.hero-title {
+  margin-bottom: 1em;
+  font-family: "Raleway", sans-serif;
+}
+.hero-description {
+  color: hsl(238, 22%, 44%);
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+.subscribe-form {
+  padding: 0.8em;
+  width: 82%;
+  border: 0.2px solid hsl(0, 0%, 75%);
+  /* margin: 0 auto; */
+}
+.subscribe-btn {
+  display: block;
+  width: 89%;
+  margin: 1em auto;
+  padding: 0.8em;
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.subscribe-btn:hover {
+  opacity: 0.7;
+}
+.features-section {
+  background-color: hsl(240, 75%, 98%);
+  margin-top: -0.5px;
+  padding: 2em;
+}
+.feature-description-container {
+  text-align: center;
+}
+.feature-title {
+  padding: 0 1em;
+  font-size: 1.05rem;
+  font-family: "Raleway", sans-serif;
+  margin: 1em 0;
+}
+.feature-description {
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 1em;
+  color: hsl(238, 22%, 44%);
+}
+.flyo-link {
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+  padding-bottom: 0.7em;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+.flyo-link:hover {
+  color: rgb(121, 234, 208);
+  border-bottom: 1px solid rgb(121, 234, 208);
+}
+.arrow-icon {
+  width: 8%;
+  margin-top: 0.5em;
+  margin-bottom: -0.5em;
+}
+.testimonial-container {
+  background-color: #fff;
+  margin: 3.7em 0;
+  padding: 2em;
+  text-align: left;
+  border-radius: 0.5em;
+  box-shadow: 0px 5px 7px hsl(0, 0%, 75%);
+}
+.quote {
+  width: 6%;
+}
+.testimonial-description {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+}
+.testimonial-details {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.pfp-container {
+  width: 15%;
+  border-radius: 2em;
+}
+.pfp {
+  border-radius: 2em;
+}
+.name {
+  font-size: 0.9em;
+  font-family: "Raleway", sans-serif;
+}
+.status {
+  font-size: 0.7rem;
+}
+.action-section {
+  background-color: hsl(238, 22%, 44%);
+  padding: 2em;
+  color: hsl(240, 75%, 98%);
+  text-align: center;
+}
+.action-title {
+  font-size: 1.1em;
+  font-family: "Raleway", sans-serif;
+  margin: 2em 0 1em;
+}
+.action-description {
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 2em 0;
+}
+.footer-section {
+  background-color: hsl(243, 87%, 12%);
+  padding: 2em;
+  color: hsl(240, 75%, 98%);
+}
+.footer-logo {
+  width: 50%;
+  filter: invert(1);
+  margin: 2em 0;
+}
+.contact {
+  margin-bottom: 1em;
+}
+.icon {
+  width: 5%;
+  margin-right: 1em;
+}
+.footer-list {
+  margin-top: 2em;
+  display: block;
+}
+.footer-list li {
+  cursor: pointer;
+  margin-bottom: 0.7em;
+}
+.footer-list li:hover {
+  color: hsl(170, 45%, 43%);
+}
+.footer-left {
+  margin-bottom: 2em;
+}
+.footer-end {
+  margin-top: 2em;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+.icon-icon {
+  padding: 0.5em 0.7em;
+  border: 0.5px solid hsl(240, 75%, 98%);
+  border-radius: 3em;
+  cursor: pointer;
+}
+.my-name {
+  color: hsl(240, 75%, 98%);
+}
+.fa-facebook-f:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+  color: hsl(170, 45%, 43%);
+}
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: hsl(240, 75%, 98%);
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 3em 5em;
+  }
+
+  .logo {
+    width: 50%;
+  }
+  .nav-list {
+    width: 30%;
+  }
+  ul {
+    justify-content: space-around;
+  }
+  .nav-list li {
+    font-size: 1.2em;
+  }
+  .hero-section {
+    padding: 2em 5em 10em;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+    background-image: url(images/bg-curve-desktop.svg);
+  }
+  .hero-img-container {
+    width: 100%;
+  }
+  .hero-title {
+    font-size: 2em;
+  }
+  .hero-description {
+    font-size: 1.2rem;
+    color: hsl(243, 87%, 12%);
+  }
+  .subscribe-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .subscribe-form {
+    width: 50%;
+  }
+  .subscribe-btn {
+    width: 30%;
+  }
+  .features-section {
+    padding: 2em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .feature-description-container {
+    text-align: left;
+  }
+  .feature-title {
+    padding: 0;
+    font-size: 1.7rem;
+  }
+  .feature-description {
+    line-height: 1;
+    font-size: 1rem;
+    color: hsl(243, 87%, 12%);
+  }
+  .arrow-icon {
+    width: 4%;
+    margin-bottom: -0.4em;
+    margin-top: 0.4em;
+  }
+  .testimonial-container {
+    width: 70%;
+  }
+  .action-section {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    padding: 2em 4em;
+    text-align: left;
+  }
+  .action-description-container {
+    width: 50%;
+  }
+  .action-subscribe {
+    width: 50%;
+    display: block;
+  }
+  .action-title {
+    font-size: 1.5rem;
+  }
+  .action-form {
+    width: 90%;
+  }
+  .action-btn {
+    width: 50%;
+    margin: 1em auto 0 0;
+  }
+  .footer-section {
+    padding: 2em 4em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon-icon {
+    height: 1.5em;
+  }
+}
+
+@media (min-width: 1440px) {
+  header {
+    padding: 4em 6em;
+  }
+  .hero-section {
+    padding: 2em 6em;
+    padding-bottom: 12em;
+  }
+  .hero-title {
+    font-size: 2.5em;
+  }
+  .features-section {
+    margin-top: -2px;
+    padding: 2em 6em;
+  }
+  .feature-title {
+    font-size: 2rem;
+  }
+  .feature-description {
+    font-size: 1.17rem;
+  }
+  .testimonial-description {
+    font-size: 1.17rem;
+  }
+  .action-section {
+    padding: 2em 6em;
+    justify-content: space-between;
+  }
+  .action-description-container {
+    width: 40%;
+  }
+  .action-title {
+    font-size: 2rem;
+  }
+  .footer-section {
+    padding: 2em 6em;
+  }
+  .footer-logo {
+    width: 80%;
+  }
+
+  .action-subscribe {
+    width: 40%;
+  }
+  .action-btn {
+    padding: 1em 1.7em;
+    margin-left: -0.15em;
+  }
+}

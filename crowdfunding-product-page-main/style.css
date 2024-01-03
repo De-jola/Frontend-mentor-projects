@@ -1,0 +1,301 @@
+:root {
+  --primary-bg-color: hsl(176, 50%, 47%);
+  --secondary-bg-color: hsl(176, 72%, 28%);
+  --primary-text-color: hsl(0, 0%, 48%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Commissioner", sans-serif;
+  box-sizing: border-box;
+}
+header {
+  background-image: url(images/image-hero-mobile.jpg);
+  padding: 1em 1em 15em;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main {
+  padding: 2em;
+  background-color: rgb(250, 247, 247);
+}
+p {
+  font-size: 0.9rem;
+  color: var(--primary-text-color);
+}
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-weight: 800;
+}
+.btn:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+.number-line {
+  width: 40%;
+  margin: 1.5em auto;
+}
+
+.hero-div {
+  text-align: center;
+  background-color: #fff;
+  padding: 2em;
+  /* box-shadow: 0px 0.1px 1px var(--primary-text-color); */
+  border-radius: 0.5em;
+  margin-top: -5em;
+  margin-bottom: 5em;
+  position: relative;
+}
+.hero-image {
+  margin-top: -6em;
+}
+.hero-title {
+  font-size: 1.5em;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bookmark-description {
+  display: none;
+}
+.bookmark-logo {
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: var(--primary-bg-color);
+  border-radius: 2em;
+  font-weight: bold;
+  padding: 1.2em 3em;
+  font-size: 0.8rem;
+  margin-right: 1em;
+  border: none;
+}
+.numbers-div {
+  text-align: center;
+  margin-top: -3em;
+  background-color: #fff;
+  padding: 2em 3em;
+
+  border-radius: 0.5em;
+}
+.progress-bar {
+  background-color: var(--primary-bg-color);
+  border-radius: 2em;
+}
+.about-div {
+  margin-top: 2em;
+  background-color: #fff;
+  padding: 2em;
+
+  border-radius: 0.5em;
+}
+.about-description {
+  font-size: 0.8rem;
+}
+.pledges {
+  border: 0.2px solid var(--primary-text-color);
+  border-radius: 0.5em;
+  padding: 2em 1.5em;
+  margin: 2em 0;
+}
+.pledge-condition {
+  color: var(--primary-bg-color);
+  margin-bottom: 1.5em;
+}
+.left {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--primary-text-color);
+}
+.pledges-disabled {
+  color: var(--primary-text-color);
+  opacity: 0.5;
+  user-select: none;
+}
+
+.btn-disabled {
+  background-color: var(--primary-text-color) !important;
+  opacity: 0.5;
+  cursor: none;
+}
+.btn-disabled:hover {
+  background-color: var(--primary-text-color);
+}
+.btn-disabled:active {
+  background-color: var(--primary-text-color);
+}
+
+/* Pledge Modal */
+.modal-header-description {
+  padding: 1em 1em 0 1em;
+}
+.modal-header,
+.modal-footer {
+  border: none;
+}
+.pledge-modal-description {
+  font-size: 0.8rem;
+}
+.form-check {
+  padding: 1em;
+  margin: 0;
+}
+.radioCheck {
+  margin: 1em 0 !important;
+}
+.radioCheck1 {
+  margin: 0 !important;
+}
+
+.radioCheck:checked {
+  background-color: var(--primary-bg-color);
+  border-color: var(--primary-bg-color);
+}
+.titleContainer,
+.descriptionContainer {
+  padding: 0 2em;
+}
+.pledge-title1 {
+  padding-bottom: 1em;
+}
+.pledge-input-container {
+  text-align: center;
+  padding: 0.5em 0 0 0;
+}
+.pledge-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding-top: 1em;
+}
+.pledge-input {
+  width: 40%;
+}
+.input-group-text {
+  border-radius: 2em;
+  font-family: "Commissioner", sans-serif;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  background-color: #fff;
+  border-right: none;
+}
+.inputInput {
+  border-radius: 2em;
+  border-left: none;
+}
+.btn-input {
+  padding: 0.7em 1.5em;
+  margin: 0;
+}
+.displayNone {
+  display: none;
+}
+.modal-container {
+  text-align: center;
+  padding: 1em 2em;
+}
+.appreciation-title,
+.modal-img {
+  padding-bottom: 1em;
+}
+.modal-btn {
+  margin: auto;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 3em 6em 18em 6em;
+    background-image: url(images/image-hero-desktop.jpg);
+    background-position: 20% 45%;
+  }
+  main {
+    padding: 2em 25%;
+  }
+  .navbar-collapse {
+    justify-content: right;
+  }
+  .nav-link {
+    color: #fff;
+    letter-spacing: 0.1em;
+  }
+  .hero-title {
+    font-size: 2em;
+  }
+  .flex-container {
+    justify-content: space-between;
+  }
+  .bookmark-description {
+    display: inline;
+  }
+  .bookmark-logo {
+    margin-right: 0.5em;
+    cursor: pointer;
+    width: 35%;
+    margin-left: -0.2em;
+  }
+  .bookmark {
+    background-color: rgb(238, 237, 237);
+    border-radius: 2em;
+    padding-right: 1em;
+    cursor: pointer;
+  }
+  .numbers-list {
+    display: flex;
+    gap: 6em;
+  }
+
+  .number-description-container {
+    position: relative;
+  }
+
+  .number {
+    font-size: 2em;
+    /* border-right: 0.5px solid rgb(238, 237, 237); */
+  }
+
+  .number-line {
+    display: none;
+  }
+  .vertical {
+    border-left: 1.5px solid rgb(238, 237, 237);
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: -50%;
+  }
+  .pledge-title-container {
+    display: flex;
+    gap: 0.5em;
+  }
+  .pledge-title-container1 {
+    display: block;
+  }
+  .title-container {
+    padding: 0;
+  }
+  .pledge-title {
+    font-size: small;
+    margin: 0;
+  }
+  .pledge-condition {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+  }
+  .radioCheck {
+    margin: 0 !important;
+  }
+  .remainder-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

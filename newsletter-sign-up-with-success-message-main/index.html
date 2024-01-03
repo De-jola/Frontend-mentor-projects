@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body id="bodyelement">
+    <!-- Sign-up form start -->
+    <main class="container" id="mainpart">
+      <div class="hero_section d-md-flex d-lg-flex flex-row-reverse">
+        <div class="hero_img_con" id="imagepart">
+          <img
+            class="hero_image"
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt=""
+          />
+        </div>
+        <div class="container hero_container">
+          <h1 class="hero_title mt-3 fw-bold">Stay updated!</h1>
+          <p class="hero_description">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <div class="features_list">
+            <div class="features_container d-flex gap-3">
+              <div class="features_icon_container">
+                <img
+                  class="features_icon"
+                  src="assets/images/icon-list.svg"
+                  alt=""
+                />
+              </div>
+              <div class="fetures_description_container">
+                <p class="features_description">
+                  Product discovery and building what matters
+                </p>
+              </div>
+            </div>
+            <div class="features_container d-flex gap-3">
+              <div class="features_icon_container">
+                <img
+                  class="features_icon"
+                  src="assets/images/icon-list.svg"
+                  alt=""
+                />
+              </div>
+              <div class="fetures_description_container">
+                <p class="features_description">
+                  Measuring to ensure updates are a success
+                </p>
+              </div>
+            </div>
+            <div class="features_container d-flex gap-3">
+              <div class="features_icon_container">
+                <img
+                  class="features_icon"
+                  src="assets/images/icon-list.svg"
+                  alt=""
+                />
+              </div>
+              <div class="fetures_description_container">
+                <p class="features_description">And much more!</p>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3 mt-3 form-container">
+            <label for="exampleInputEmail1" class="form-label fw-bold"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="emailaddress"
+              aria-describedby="emailHelp"
+              placeholder="email@company.com"
+            />
+          </div>
+
+          <button
+            onclick="saveSubscriber()"
+            type="button"
+            class="btn btn-primary fw-bold"
+          >
+            Subscribe to my monthly newsletter
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <!-- Success message end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

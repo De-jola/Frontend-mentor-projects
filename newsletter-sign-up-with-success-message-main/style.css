@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: hsl(234, 29%, 20%);
+  /* display: none; */
+}
+.main-container {
+  display: none;
+}
+
+.hero_image {
+  width: 100%;
+}
+.hero_container {
+  padding: 2em;
+}
+.hero_title {
+  font-size: 2.9rem;
+}
+.form-label {
+  color: hsl(234, 29%, 20%);
+}
+.btn-primary {
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  padding: 1em;
+  border: none;
+}
+.form-control {
+  padding: 1em;
+}
+.body-container {
+  padding: 2em;
+  padding-top: 6em;
+}
+.dismiss {
+  display: none;
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+    padding: 10% 15%;
+  }
+  #imagepart {
+    background-image: url(assets/images/illustration-sign-up-desktop.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 2em;
+  }
+  .hero_image {
+    display: none;
+  }
+  main {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 2em;
+  }
+  .features_description {
+    font-size: 0.9em;
+  }
+  #goneSoon {
+    padding: 5%;
+    font-size: 1.5em;
+  }
+  .breakpoint {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    background-color: hsl(234, 29%, 20%);
+    padding: 20% 22%;
+  }
+  #imagepart {
+    background-image: url(assets/images/illustration-sign-up-desktop.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    border-radius: 2em;
+  }
+  .hero_image {
+    display: none;
+  }
+  main {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 2em;
+  }
+  .features_description {
+    font-size: 0.9em;
+  }
+  #goneSoon {
+    padding: 5%;
+    font-size: 2em;
+  }
+  .breakpoint {
+    display: none;
+  }
+}

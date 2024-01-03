@@ -1,0 +1,194 @@
+body {
+  font-family: "Epilogue", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 41%);
+}
+
+/* Hero image */
+.hero-img {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.hero-section {
+  width: 100%;
+}
+/* Navbar */
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+.container-fluid {
+  background-color: hsl(0, 0%, 98%);
+  margin: 0;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-brand {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.nav-item a {
+  color: hsl(0, 0%, 41%);
+}
+
+.login {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  text-align: center;
+  color: hsl(0, 0%, 41%);
+}
+.login:hover {
+  color: hsl(0, 0%, 8%);
+}
+.dropdown-menu {
+  border: none;
+  background-color: hsl(0, 0%, 98%);
+}
+
+/* Hero Section */
+.content {
+  padding: 5% 2%;
+  text-align: center;
+  line-height: 1.5;
+}
+.content h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  color: hsl(0, 0%, 8%);
+}
+.content p {
+  padding: 2%;
+  font-size: 1.125rem;
+  color: hsl(0, 0%, 41%);
+}
+
+/* Buttons */
+.btn {
+  margin: 40px 30px;
+  border-radius: 15px;
+}
+.btn-dark:hover {
+  border: 1px solid black;
+  background-color: hsl(0, 0%, 98%);
+  color: black;
+}
+.register {
+  margin: 0 16%;
+  color: hsl(0, 0%, 41%);
+  margin-bottom: 40px;
+  width: 70%;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Icons */
+.fa-rectangle-list,
+.fa-calendar-week,
+.fa-bell,
+.fa-clock {
+  margin-right: 10px;
+}
+.fa-rectangle-list {
+  color: royalblue;
+}
+.fa-calendar-week {
+  color: turquoise;
+}
+.fa-bell {
+  color: gold;
+}
+.fa-clock {
+  color: rebeccapurple;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 0 0 0 3%;
+  margin: 0 0 0 3%;
+}
+.footer-img {
+  width: 60%;
+}
+.attribution {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .register {
+    font-size: 1rem;
+    margin: 0;
+    width: 10%;
+    position: absolute;
+    right: 1%;
+    border-radius: 20px;
+  }
+  .login {
+    position: absolute;
+    right: 15%;
+    margin-bottom: 0;
+  }
+  .hero-img {
+    visibility: hidden;
+  }
+  .hero {
+    background-image: url(images/image-hero-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .content {
+    text-align: left;
+    margin-top: 30px;
+  }
+  .btn-dark {
+    margin: 10% 0;
+  }
+
+  .content p {
+    padding: 0;
+    font-size: 1.125rem;
+  }
+  .content h1 {
+    font-size: 3.5rem;
+  }
+  .for-flex {
+    width: 40%;
+  }
+  .navbar {
+    margin: 1%;
+    padding: 1%;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    margin: 0 1%;
+    padding: 0;
+  }
+  .nav-item {
+    margin: 0 3%;
+  }
+  .footer {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-img {
+    width: 80%;
+  }
+  .dropdown-menu {
+    background-color: white;
+    box-shadow: 2px 2px 2px lightgray;
+  }
+}

@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  color: hsl(192, 100%, 9%);
+  max-width: 100%;
+}
+
+nav {
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+h1 h2 h3 {
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+}
+.hero-img-container {
+  padding: 2.2em;
+}
+.hero-section {
+  /* padding: 0.2em; */
+  background-image: url(images/bg-section-top-mobile-1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  width: 100%;
+}
+
+.logo {
+  width: 50%;
+}
+
+.button {
+  padding: 0.5em 1.5em;
+  border: 1px solid hsl(322, 100%, 66%);
+  background-color: #fff;
+  border-radius: 1em;
+  color: hsl(322, 100%, 66%);
+  font-size: 0.55rem;
+}
+.hero-description-container {
+  padding: 3em 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.hero-title {
+  margin-bottom: 1em;
+  font-size: 1.6rem;
+}
+.hero-description {
+  width: 100%;
+  font-size: 0.9rem;
+  color: hsl(192, 100%, 9%);
+  font-weight: 600;
+}
+.get-started {
+  padding: 1em 2em;
+  border: 1px solid hsl(322, 100%, 66%);
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 2em;
+  color: #fff;
+  box-shadow: 0.5px 3px 5px lightgray;
+}
+.numbers {
+  text-align: center;
+  padding-bottom: 5em;
+}
+.community-img {
+  width: 20%;
+}
+.communities {
+  margin-bottom: 5em;
+}
+.messages {
+  margin-bottom: 3em;
+}
+.numbers-title {
+  font-size: 3rem;
+}
+.numbers-description {
+  color: hsl(192, 100%, 9%);
+  opacity: 0.7;
+}
+.feature-img-container {
+  margin-bottom: 4em;
+}
+.feature-img {
+  width: 85%;
+  margin-top: 5em;
+}
+.feature-title {
+  margin-bottom: 1em;
+  letter-spacing: -0.06rem;
+}
+.feature-description {
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+.features-section {
+  background-color: hsl(207, 100%, 98%);
+  padding: 2em;
+  text-align: center;
+}
+.first-feature {
+  margin-top: -1px;
+}
+
+.second-feature {
+  background-image: url(images/bg-section-bottom-mobile-1.svg);
+  margin-top: -1px;
+  padding-top: 6em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  padding-bottom: 5em;
+}
+.third-features-img {
+  background-image: url(images/bg-section-top-mobile-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.5em;
+}
+.third-feature {
+  background-color: hsl(207, 100%, 98%);
+  margin-top: -0.7em;
+
+  /* background-color: #fff; */
+}
+.action-section {
+  background-image: url(images/bg-section-bottom-mobile-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10em 3em;
+  text-align: center;
+  margin-top: -0.1em;
+}
+.action-button {
+  margin-top: 2em;
+}
+.newsletter-img {
+  background-image: url(images/bg-footer-top-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.5em 3.5em;
+}
+.subscribe-form {
+  margin: 2em 0 1em 0;
+  padding: 1em;
+  border-radius: 0.5em;
+  width: 90%;
+  border: none;
+}
+.newsletter-container {
+  position: relative;
+  padding-bottom: 4em;
+}
+.newsletter {
+  color: hsl(207, 100%, 98%);
+  background-color: hsl(192, 100%, 9%);
+  margin-top: -1px;
+  padding: 2em;
+}
+.newsletter-title {
+  margin: 1em 0;
+}
+.subscribe-button {
+  border-radius: 0.5em;
+  box-shadow: none;
+  position: absolute;
+  bottom: 1em;
+  right: 0.7em;
+}
+.contact-item {
+  margin-top: 1.5em;
+}
+.contact-img {
+  width: 5%;
+  margin-right: 1em;
+}
+.socials {
+  margin-top: 2em;
+  display: flex;
+  gap: 0.5em;
+}
+.footer-logo {
+  margin: 3em 0 1em 0;
+  width: 70%;
+  filter: saturate(10);
+}
+footer {
+  margin-top: -2px;
+  color: hsl(207, 100%, 98%);
+  background-color: hsl(192, 100%, 9%);
+}
+
+@media (min-width: 1024px) {
+  nav {
+    padding: 4em;
+    align-items: center;
+  }
+  .logo {
+    width: 70%;
+  }
+  .button {
+    font-size: 1rem;
+  }
+  .hero-description-container {
+    padding: 3em;
+  }
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+  .hero-description {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .hero-img-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .numbers {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .hero-section {
+    background-image: url(images/bg-section-top-desktop-1.svg);
+    padding-bottom: 5em;
+  }
+  .features-section {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    padding: 0 4em;
+  }
+  .feature-title {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+  }
+  .first-feature {
+    flex-direction: row-reverse;
+  }
+  .second-feature {
+    padding: 4em;
+    background-image: url(images/bg-section-bottom-desktop-1.svg);
+  }
+  .third-features-img {
+    background-image: url(images/bg-section-top-desktop-2.svg);
+    background-size: cover;
+    padding: 4.5em;
+  }
+  .third-feature {
+    flex-direction: row-reverse;
+    padding: 0 4em;
+  }
+  .action-section {
+    background-image: url(images/bg-section-bottom-desktop-2.svg);
+  }
+  .action-container h1 {
+    font-size: 2rem;
+  }
+  .newsletter-img {
+    background-image: url(images/bg-footer-top-desktop.svg);
+    padding: 4.2em;
+  }
+  .newsletter {
+    margin-top: -2px;
+    padding: 0 3em;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .newsletter-container {
+    padding-bottom: 0;
+    width: 40%;
+  }
+  .newsletter-description {
+    width: 60%;
+  }
+  .footer-logo {
+    width: 50%;
+  }
+  .footer-end {
+    width: 30%;
+  }
+  .subscribe-form {
+    width: 60%;
+  }
+  .input {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .logo {
+    width: 70%;
+  }
+  .button {
+    font-size: 1.5rem;
+  }
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-description {
+    font-size: 1.5rem;
+  }
+  .get-started {
+    font-size: 1.5rem;
+  }
+  .feature-title {
+    font-size: 3rem;
+  }
+  .feature-description {
+    font-size: 1.3rem;
+  }
+  .numbers-title {
+    font-size: 3.5rem;
+  }
+  .action-section {
+    padding: 12em 0;
+  }
+  .action-container h1 {
+    font-size: 3em;
+  }
+  .action-button {
+    font-size: 1.5rem;
+  }
+  .newsletter-img {
+    padding: 5em;
+  }
+  .input {
+    align-items: center;
+  }
+  .subscribe-form {
+    width: 50%;
+  }
+  .subscribe-button {
+    padding: 0.7em 2em;
+    margin: 0;
+  }
+}
